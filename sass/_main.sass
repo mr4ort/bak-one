@@ -5,7 +5,7 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
+	font-family: "LatoRegular", sans-serif
 	overflow-x: hidden
 
 .hidden
@@ -36,6 +36,79 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+
+$main-color: #444
+
+
+//       HEADER
+
+header
+	padding: 25px 0
+
+
+.logo
+	text-align: left
+	height: 45px
+	vertical-align: middle
+	color: $main-color
+	img
+		width: 45px
+		height: 45px
+	.left-part
+		display: inline-block
+		vertical-align: middle
+	.right-part
+		vertical-align: middle
+		text-align: left
+		display: inline-block
+		margin-left: 10px
+	strong
+		font-weight: normal
+		font-family: "LatoBold", sans-serif
+		text-transform: uppercase
+		display: block
+		font-size: 20px
+		line-height: 20px
+	span
+		display: block
+		font-size: 14px
+		line-height: 14px
+
+//				NAV
+
+
+.top-line
+	nav
+		display: inline-block
+.top-nmu
+	vertical-align: middle
+	height: 45px
+	&:after
+		content: ''
+		width: 1px
+		height: 100%
+		vertical-align: middle
+		display: inline-block
+	li
+		display: inline-block
+		list-style-type: none
+		a
+			display: block
+			font-size: 14px
+			font-family: "LatoRegular", sans-serif
+			padding: 0 10px
+			text-decoration: none
+			color: $main-color
+			text-transform: uppercase
+			height: 36px
+			line-height: 36px
+			//line-height: 14px
+			&:hover
+				background-color: #59C48B
+				color: #fff
+
+
+
 
 //ALWAYS END
 //@import "_media.sass"

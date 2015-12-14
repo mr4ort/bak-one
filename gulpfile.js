@@ -50,7 +50,7 @@ gulp.task('styles', function () {
 
 	.pipe(plugins.rename('style.min.css'))
 	//.pipe(minifycss())
-	.pipe(gulp.dest('app/css'));
+	.pipe(gulp.dest('app/'));
 });
 
 gulp.task('watch', function() {
