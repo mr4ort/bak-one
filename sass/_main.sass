@@ -3,10 +3,12 @@
 body
 	font-size: 16px
 	min-width: 320px
+	max-width: 1020px
 	position: relative
 	line-height: 1.6
 	font-family: "LatoRegular", sans-serif
 	overflow-x: hidden
+	margin: 0 auto
 
 .hidden
 	display: none
@@ -38,6 +40,26 @@ body textarea:required:valid
 //Custom Styles Here
 
 $main-color: #444
+$green-coler: #1bbc9b
+
+.btn
+	display: inline-block
+	background-color: $green-coler
+	text-transform: uppercase
+	height: 36px
+	font-size: em(13px)
+	font-family: "LatoBold", sans-serif
+	color: #fff
+	text-decoration: none
+	line-height: 39px
+	padding: 0 10px
+
+.down-btn
+	display: inline-block
+	background-image: url(img/down_btn.png)
+	width: 40px
+	height: 40px
+	background-size: cover
 
 
 //       HEADER
@@ -57,11 +79,13 @@ header
 	.left-part
 		display: inline-block
 		vertical-align: middle
+		height: 45px
 	.right-part
 		vertical-align: middle
 		text-align: left
 		display: inline-block
 		margin-left: 10px
+
 	strong
 		font-weight: normal
 		font-family: "LatoBold", sans-serif
@@ -80,6 +104,7 @@ header
 .top-line
 	nav
 		display: inline-block
+		float: right
 .top-nmu
 	vertical-align: middle
 	height: 45px
@@ -94,14 +119,14 @@ header
 		list-style-type: none
 		a
 			display: block
-			font-size: 14px
+			font-size: em(14px)
 			font-family: "LatoRegular", sans-serif
 			padding: 0 10px
 			text-decoration: none
 			color: $main-color
 			text-transform: uppercase
 			height: 36px
-			line-height: 36px
+			line-height: 38px
 			//line-height: 14px
 			&:hover
 				background-color: #59C48B
@@ -109,6 +134,38 @@ header
 
 
 
+//				TOP SECTION
 
-//ALWAYS END
+.top-section
+	background-image: url(img/top_bg.jpg)
+	height: 450px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	color: #fff
+	h1
+		font-size: em(55px)
+		font-family: "LatoLight", sans-serif
+		font-weight: normal
+		margin-top: 60px
+		strong
+			font-family: "LatoBold", sans-serif
+			font-weight: normal
+	p
+		display: inline-block
+		max-width: 640px
+		font-size: em(18px)
+		line-height: 24px
+		font-family: "LatoLight", sans-serif
+		margin-top: 20px
+	.btn
+		margin-top: 30px
+	.down-btn
+		margin-top: 40px
+
+
+
+
+
+
 //@import "_media.sass"
